@@ -1,0 +1,11 @@
+Package: BrignonPackage
+Title: Functions that I use regularly
+Version: 0.1.0
+Authors@R: person("WR", "Brignon", email = "william.r.brignon@gmail.com", role = c("aut", "cre"))
+Description: Package is a group of functions that I use in my codez and maybe helpful to others running my scripts
+License: GPL-2
+LazyData: TRUE
+Imports:
+  plyr
+Suggests: testthat
+RoxygenNote: 6.0.0
