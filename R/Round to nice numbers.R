@@ -11,6 +11,7 @@
 #' @examples
 #' nicenumbs(c(4,12,233,49488), lower_bound = T)
 #' nicenumbs(c(4,12,233,49488), lower_bound = F)
+#' @export
 
 nicenumbs <- function(x, lower_bound = TRUE, nice_small=c(0,5,10), nice_big=c(1,2,3,4,5,6,7,8,9,10)) {
   if (abs(x) > 100) {

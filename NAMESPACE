@@ -3,4 +3,5 @@
 export(ht)
 export(ipak)
 export(mom)
+export(nicenumbs)
 export(sumdater)
