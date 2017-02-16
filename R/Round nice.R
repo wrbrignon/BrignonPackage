@@ -12,7 +12,7 @@
 #' rndnice(c(4,12,233,49488), lower_bound = T)
 #' rndnice(c(4,12,233,49488), lower_bound = F)
 
-rndnice <- Vectorize(function(x, lower_bound = TRUE, nice_small=c(0,5,10), nice_big=c(1,2,3,4,5,6,7,8,9,10)) {
+rndnice <- function(x, lower_bound = TRUE, nice_small=c(0,5,10), nice_big=c(1,2,3,4,5,6,7,8,9,10)) {
   if (abs(x) > 100) {
     nice = nice_big
   } else {
@@ -35,7 +35,7 @@ rndnice <- Vectorize(function(x, lower_bound = TRUE, nice_small=c(0,5,10), nice_
       return(0)
     }
   }
-})
+}
 
 
 
