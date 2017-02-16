@@ -1,0 +1,35 @@
+local({
+  r <- getOption("repos")
+  r["CRAN"] <- "https://ftp.osuosl.org/pub/cran"
+  options(repos = r)
+})
+
+library(utils)
+# ipak function: install and load multiple R packages.
+# check to see if packages are installed. Install them if they are not, then load them into the R session.
+#source("C:/Users/bbrignon/Billb/R codes/Brignon/R/Install and load packages.R")
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg))
+    install.packages(new.pkg, dependencies = TRUE,verbose = F)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+packages <-  c("plyr","Hmisc","beepr","mail","xlsx","nnet","MuMIn","devtools","httr","gplots")
+ipak(packages)
+
+##work around for certificate error when loading Brignonpackage
+#httr::set_config(config( ssl_verifypeer = 0L ))
+
+##install and load BrignonPackage
+#install_github("wrbrignon/BrignonPackage")
+library(BrignonPackage)
+
+##Just setting up some basic options
+options(help_type="html") 
+options(family = "serif")
+options(scipen=10)
+
+source("C:/Users/bbrignon/Billb/R codes/Functions/Text me.R")
+
+#remove.packages(c("devtools","httr","BrignonPackage"))
