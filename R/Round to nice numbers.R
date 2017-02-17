@@ -11,6 +11,9 @@
 #' @examples
 #' nicenumbs(c(4,12,233,49488), lower_bound = T)
 #' nicenumbs(c(4,12,233,49488), lower_bound = F)
+#' ##You can also input vectors using the vectorize function.
+#' v.nicenumbs <- Vectorize(nicenumbs)
+#' v.nicenumbs(c(2,23,456,777,1001))
 #' @export
 
 nicenumbs <- function(x, lower_bound = TRUE, nice_small=c(0,5,10), nice_big=c(1,2,3,4,5,6,7,8,9,10)) {

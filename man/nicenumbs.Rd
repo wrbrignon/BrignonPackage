@@ -26,4 +26,7 @@ whatever else.
 \examples{
 nicenumbs(c(4,12,233,49488), lower_bound = T)
 nicenumbs(c(4,12,233,49488), lower_bound = F)
+##You can also input vectors using the vectorize function.
+v.nicenumbs <- Vectorize(nicenumbs)
+v.nicenumbs(c(2,23,456,777,1001))
 }
