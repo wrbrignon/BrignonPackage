@@ -10,9 +10,8 @@
 #'   it gets weird
 #' @param xlim.small similar to xlim.big
 #'   
-#' @return Returns a barplot in the form of a tornado diagram
-#'   
-#' @details I tested this for the most part but I bet it will throwup on me at
+#' @return Returns a barplot in the form of a tornado diagram 
+#' I tested this for the most part but I bet it will throwup on me at
 #'   some point.  I'll keep updating the codez until it holds them down.  Uses
 #'   the nicenumbs funciton in the BrignonPackage for sexy axis plotting. 
 #'   Requires installing the gplots and Hmisc packages.
