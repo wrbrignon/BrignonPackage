@@ -42,7 +42,7 @@ OW.tornado <- function(data = NULL,best.outcome = max, x.axis.title = "Utility",
   
   ## Find optimal outcome/greatest utility (i.e.,  max or min) for each combination of
   ## parm and increment (pct)
-  bests <- aggregate(infile["utility"], by= infile[c("parm","pct")], best.outcome)
+  bests <- aggregate(data["utility"], by= data[c("parm","pct")], best.outcome)
   
   ## Find and cbind the minimum and maximum utilities of the optimal outcome/greatest
   ## utility for each parameter,  These will define the ends of the bars in the

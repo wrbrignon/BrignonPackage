@@ -13,3 +13,4 @@ library(BrignonPackage)
 ##test if it worked
 mom("beta",0.5,0.2)   ##get beta dist parms
 ?ipak  ##show ipak help document
+?sensy
