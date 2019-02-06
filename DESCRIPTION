@@ -6,6 +6,5 @@ Description: Package is a group of functions that I use in my codez and maybe he
 License: GPL-2
 LazyData: TRUE
 Imports:
-  plyr
 Suggests: testthat
 RoxygenNote: 6.0.0
